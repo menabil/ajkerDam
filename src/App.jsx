@@ -5,6 +5,7 @@ import About from "./component/pages/About";
 import Products from "./component/pages/Products";
 import Services from "./component/pages/Services";
 import ShopDetails from "./component/pages/ShopDetails";
+import ProductDetail from "./component/pages/ProductDetail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="products" element={<Products />} />
           <Route path="services" element={<Services />} />
           <Route path="shop-details" element={<ShopDetails />} />
+          <Route path="product/:id" element={<ProductDetail />} />
         </Route>
       </Routes>
     </>

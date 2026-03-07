@@ -2,12 +2,12 @@ import React from 'react'
 
 const Services = () => {
   const services = [
-    { id: 1, name: 'Product Installation', description: 'Professional installation service for all products', price: 45.00 },
-    { id: 2, name: 'Technical Support', description: '24/7 technical support and troubleshooting', price: 99.99 },
-    { id: 3, name: 'Extended Warranty', description: '2-year extended warranty coverage', price: 29.99 },
-    { id: 4, name: 'Free Delivery', description: 'Free same-day delivery within city limits', price: 0.00 },
-    { id: 5, name: 'Product Repair', description: 'Authorized repair service for all devices', price: 60.00 },
-    { id: 6, name: 'Setup Assistance', description: 'Expert setup and configuration service', price: 35.00 },
+    { id: 1, name: 'Product Installation', description: 'Professional installation service for all products', price: 5400 },
+    { id: 2, name: 'Technical Support', description: '24/7 technical support and troubleshooting', price: 12000 },
+    { id: 3, name: 'Extended Warranty', description: '2-year extended warranty coverage', price: 3600 },
+    { id: 4, name: 'Free Delivery', description: 'Free same-day delivery within city limits', price: 0 },
+    { id: 5, name: 'Product Repair', description: 'Authorized repair service for all devices', price: 7200 },
+    { id: 6, name: 'Setup Assistance', description: 'Expert setup and configuration service', price: 4200 },
   ]
 
   return (
@@ -20,8 +20,8 @@ const Services = () => {
             <p className="text-gray-600 mb-4">{service.description}</p>
             <div className="pt-2 border-t">
               <p className="text-sm text-gray-500 mb-1">Today's Price</p>
-              <p className="text-2xl font-bold text-amber-600">
-                {service.price === 0 ? 'FREE' : `$${service.price}`}
+              <p className="text-2xl font-bold text-blue-600">
+                {service.price === 0 ? 'FREE' : `৳${service.price}`}
               </p>
             </div>
           </div>

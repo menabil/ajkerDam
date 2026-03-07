@@ -3,13 +3,13 @@ import React from 'react'
 const About = () => {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold mb-6">About Ajker Dam Shop</h1>
+      <h1 className="text-4xl font-bold mb-6">About BazaarPrice BD</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         <div className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
           <p className="text-gray-600 mb-4">
-            Founded in 2014, Ajker Dam Shop started with a simple vision: to make quality electronics and accessories accessible to everyone. What began as a small retail store has grown into a trusted name in the tech industry.
+            Founded in 2014, BazaarPrice BD started with a simple vision: to provide accurate market prices and make bazaar shopping easier for everyone. What began as a price tracking service has grown into Bangladesh's most trusted bazaar price information platform.
           </p>
           <p className="text-gray-600">
             Today, we serve thousands of customers with genuine products, expert service, and competitive pricing. Our commitment to excellence has made us a preferred choice for tech enthusiasts and casual buyers alike.
