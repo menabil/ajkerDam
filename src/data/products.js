@@ -132,12 +132,16 @@ export const products = [
 
 // Categories mapping
 export const categories = {
-    vegetables: "সবজি",
-    fruits: "ফল",
-    meat: "মাংস",
-    fish: "মাছ",
-    dairy: "দুগ্ধজাত",
-    spices: "মসলা",
-    grains: "শস্য",
+    fruits_vegetables: "ফলমূল ও সবাজি",
+    electronics: "ইলেকট্রনিক্স",
+    ramadan: "রমজান পণ্য",
+    traditional_food: "ঐতিহ্যবাহী খাবার",
+    meat_poultry: "মাংস ও পোলট্রি",
+    watches: "ঘড়ি",
+    cosmetics: "প্রসাধনী",
+    clothing: "পোশাক ও ফ্যাশন",
+    toys: "খেলনা",
+    home_garden: "বাড়ি ও বাগান",
+    digital: "ডিজিটাল ডাউনলোড",
     other: "অন্যান্য"
 };

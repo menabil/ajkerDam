@@ -8,7 +8,7 @@ const ShopDetails = () => {
         <div className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-2xl font-semibold mb-4">About BazaarPrice BD</h2>
           <p className="text-gray-600 mb-4">
-            Welcome to Ajker Dam Shop! We specialize in providing high-quality electronics and accessories at competitive prices. With over 10 years of experience, we're committed to customer satisfaction and reliable service.
+            Welcome to BazaarPrice BD! We specialize in providing accurate and up-to-date market prices for daily bazaar items in Bangladesh. With over 10 years of experience, we're committed to helping customers make informed shopping decisions with reliable price information.
           </p>
           <p className="text-gray-600 mb-4">
             Our mission is to make premium technology accessible to everyone. We offer genuine products, expert advice, and excellent customer support.
@@ -20,8 +20,8 @@ const ShopDetails = () => {
           <div className="space-y-3">
             <p className="text-gray-600"><strong>📍 Address:</strong><br/>123 Technology Street, Innovation District<br/>Dhaka, Bangladesh 1214</p>
             <p className="text-gray-600"><strong>📞 Phone:</strong><br/>(880) 123-456-7890</p>
-            <p className="text-gray-600"><strong>📧 Email:</strong><br/>info@ajkerdam.com</p>
-            <p className="text-gray-600"><strong>🌐 Website:</strong><br/>www.ajkerdam.com</p>
+            <p className="text-gray-600"><strong>📧 Email:</strong><br/>info@bazaarpricebd.com</p>
+            <p className="text-gray-600"><strong>🌐 Website:</strong><br/>www.bazaarpricebd.com</p>
           </div>
         </div>
 
