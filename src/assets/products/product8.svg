@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#fef2f2"/>
+  <text x="150" y="100" font-size="24" font-weight="bold" text-anchor="middle" fill="#be123c">Product 8</text>
+</svg>
