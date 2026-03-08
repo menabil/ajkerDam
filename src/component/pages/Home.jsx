@@ -75,6 +75,29 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Category grid section */}
+      <section className="bg-white py-8">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6">বিভাগসমূহ</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {Object.entries(categories).map(([key, value], idx) => {
+              // use placeholder image, or pick from assets if available
+              const imgSrc = `/src/assets/products/product${(idx % 8) + 1}.svg`;
+              return (
+                <div
+                  key={key}
+                  onClick={() => setSelectedCategory(key)}
+                  className="cursor-pointer flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow hover:shadow-md transition"
+                >
+                  <img src={imgSrc} alt={value} className="w-20 h-20 object-contain mb-2" />
+                  <span className="text-sm text-center">{value}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Search and Filter Section */}
       <section className="bg-white py-8">
         <div className="container mx-auto px-4">
