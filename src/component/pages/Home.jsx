@@ -75,6 +75,27 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Search and Filter Section */}
+      <section className="bg-white py-8">
+        <div className="container mx-auto px-4">
+          {/* Search Bar */}
+          <div className="mb-6 flex gap-3">
+            <input
+              type="text"
+              placeholder="পণ্য খুঁজুন..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="flex-1 px-4 py-3 border-2 border-emerald-500 rounded-lg focus:outline-none focus:border-emerald-700"
+            />
+            <select className="px-4 py-3 border-2 border-emerald-500 rounded-lg focus:outline-none focus:border-emerald-700 bg-white">
+              <option>সকল ক্যাটেগরি</option>
+            </select>
+          </div>
+
+
+        </div>
+      </section>
+
       {/* Category grid section */}
       <section className="bg-white py-8">
         <div className="container mx-auto px-4">
@@ -94,52 +115,6 @@ const Home = () => {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Search and Filter Section */}
-      <section className="bg-white py-8">
-        <div className="container mx-auto px-4">
-          {/* Search Bar */}
-          <div className="mb-6 flex gap-3">
-            <input
-              type="text"
-              placeholder="পণ্য খুঁজুন..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="flex-1 px-4 py-3 border-2 border-emerald-500 rounded-lg focus:outline-none focus:border-emerald-700"
-            />
-            <select className="px-4 py-3 border-2 border-emerald-500 rounded-lg focus:outline-none focus:border-emerald-700 bg-white">
-              <option>সকল ক্যাটেগরি</option>
-            </select>
-          </div>
-
-          {/* Category Buttons */}
-          <div className="flex flex-wrap gap-2 mb-8">
-            <button
-              onClick={() => setSelectedCategory('all')}
-              className={`px-4 py-2 rounded-full font-semibold transition-all ${
-                selectedCategory === 'all'
-                  ? 'bg-green-600 text-white'
-                  : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-              }`}
-            >
-              সব
-            </button>
-            {Object.entries(categories).map(([key, value]) => (
-              <button
-                key={key}
-                onClick={() => setSelectedCategory(key)}
-                className={`px-4 py-2 rounded-full font-semibold transition-all ${
-                  selectedCategory === key
-                    ? 'bg-emerald-600 text-white'
-                    : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-                }`}
-              >
-                {value}
-              </button>
-            ))}
           </div>
         </div>
       </section>
