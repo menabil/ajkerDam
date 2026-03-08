@@ -11,7 +11,7 @@ const ProductDetail = () => {
     const product = products.find(p => p.id === productId);
 
     if (!product) {
-        return <div className="container mx-auto px-4 py-8">Product not found</div>;
+        return <div className="container mx-auto px-4 py-8">পণ্য পাওয়া যায়নি</div>;
     }
 
     // Calculate price change

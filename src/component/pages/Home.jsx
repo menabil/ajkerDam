@@ -42,7 +42,7 @@ const Home = () => {
           {/* Live Ticker */}
           <div className="mt-6 bg-red-600 text-white py-3 px-4 rounded-lg overflow-hidden">
             <div className="flex items-center gap-4">
-              <span className="bg-red-700 px-3 py-1 rounded font-bold text-sm whitespace-nowrap">LIVE</span>
+              <span className="bg-red-700 px-3 py-1 rounded font-bold text-sm whitespace-nowrap">লাইভ</span>
               <div className="flex-1 overflow-hidden">
                 <div className="animate-scroll flex gap-8">
                   <span className="whitespace-nowrap">⚡ সর্বশেষ আপডেট পেতে আমাদের সাথে থাকুন</span>
