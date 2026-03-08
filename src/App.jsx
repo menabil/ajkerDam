@@ -6,6 +6,7 @@ import Products from "./component/pages/Products";
 import Services from "./component/pages/Services";
 import ShopDetails from "./component/pages/ShopDetails";
 import ProductDetail from "./component/pages/ProductDetail";
+import Login from "./component/pages/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="shop-details" element={<ShopDetails />} />
           <Route path="product/:id" element={<ProductDetail />} />
+          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </>

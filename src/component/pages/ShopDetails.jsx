@@ -20,8 +20,8 @@ const ShopDetails = () => {
           <div className="space-y-3">
             <p className="text-gray-600"><strong>📍 ঠিকানা:</strong><br/>১২৩ টেকনোলজি স্ট্রিট, ইনোভেশন ডিস্ট্রিক্ট<br/>ঢাকা, বাংলাদেশ ১২১৪</p>
             <p className="text-gray-600"><strong>📞 ফোন:</strong><br/>(৮৮০) ১২৩-৪৫৬-৭৮৯০</p>
-            <p className="text-gray-600"><strong>📧 ইমেল:</strong><br/>info@bazaarpricebd.com</p>
-            <p className="text-gray-600"><strong>🌐 ওয়েবসাইট:</strong><br/>www.bazaarpricebd.com</p>
+            <p className="text-gray-600"><strong>📧 ইমেল:</strong><br/>info@ajkerdam.com</p>
+            <p className="text-gray-600"><strong>🌐 ওয়েবসাইট:</strong><br/>www.ajkerdam.com</p>
           </div>
         </div>
 

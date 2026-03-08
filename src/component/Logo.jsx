@@ -1,4 +1,4 @@
-// Logo component for BazaarPrice BD
+// Logo component for Ajker Dam
 const Logo = () => {
   return (
     <div className="flex items-center gap-3">
@@ -15,8 +15,8 @@ const Logo = () => {
         </defs>
       </svg>
       <div className="flex flex-col">
-        <span className="text-2xl font-bold text-white drop-shadow-sm">BazaarPrice</span>
-        <span className="text-sm text-green-100 font-medium">BD</span>
+        <span className="text-2xl font-bold text-white drop-shadow-sm">Ajker Dam</span>
+        <span className="text-sm text-green-100 font-medium"></span>
       </div>
     </div>
   );

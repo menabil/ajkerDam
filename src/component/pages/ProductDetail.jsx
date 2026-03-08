@@ -47,11 +47,11 @@ const ProductDetail = () => {
     const recentHistory = history.slice(-5);
 
     return (
-        <div className="bg-gray-50 dark:bg-gray-900">
+        <div className="bg-white">
             {/* Product Details */}
             <section className="py-8">
                 <div className="container mx-auto px-4">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-8">
+                    <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
                         <div className="flex flex-col md:flex-row gap-6">
                             <div className="md:w-1/3">
                                 <img src={product.image} alt={product.nameBn} className="w-full h-64 object-cover rounded-lg" />
@@ -80,13 +80,13 @@ const ProductDetail = () => {
                     </div>
 
                     {/* Price History Chart */}
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-8">
+                    <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
                         <h2 className="text-2xl font-bold mb-4">দামের ইতিহাস (গত ৩০ দিন)</h2>
                         <Line data={chartData} options={chartOptions} />
                     </div>
 
                     {/* Recent Prices Table */}
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <div className="bg-white rounded-lg shadow-lg p-6">
                         <h2 className="text-2xl font-bold mb-4">সাম্প্রতিক দাম (গত ৫ দিন)</h2>
                         <div className="overflow-x-auto">
                             <table className="w-full">

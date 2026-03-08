@@ -27,9 +27,9 @@ const Header = () => {
           </Link></li>
         </ul>
         <div className="flex items-center space-x-4">
-          <button className="bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-400 hover:to-green-400 px-6 py-2.5 rounded-full transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:scale-105">
+          <a href="/login" className="bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-400 hover:to-green-400 px-6 py-2.5 rounded-full transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:scale-105">
             লগইন
-          </button>
+          </a>
         </div>
       </nav>
     </header>

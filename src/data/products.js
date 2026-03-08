@@ -1,4 +1,13 @@
-// Product data for BazaarPrice BD
+// Product data for Ajker Dam
+import prod1 from '../assets/products/product1.svg';
+import prod2 from '../assets/products/product2.svg';
+import prod3 from '../assets/products/product3.svg';
+import prod4 from '../assets/products/product4.svg';
+import prod5 from '../assets/products/product5.svg';
+import prod6 from '../assets/products/product6.svg';
+import prod7 from '../assets/products/product7.svg';
+import prod8 from '../assets/products/product8.svg';
+
 export const products = [
     {
         id: 1,
@@ -7,7 +16,7 @@ export const products = [
         category: "fruits_vegetables",
         unit: "কেজি",
         currentPrice: 25,
-        image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=300",
+        image: prod1,
         priceHistory: [
             { date: "2024-01-01", price: 22 },
             { date: "2024-01-02", price: 23 },
@@ -23,7 +32,7 @@ export const products = [
         category: "fruits_vegetables",
         unit: "কেজি",
         currentPrice: 45,
-        image: "https://images.unsplash.com/photo-1546470427-e9e826f4d29c?w=300",
+        image: prod2,
         priceHistory: [
             { date: "2024-01-01", price: 40 },
             { date: "2024-01-02", price: 42 },
@@ -39,7 +48,7 @@ export const products = [
         category: "fruits_vegetables",
         unit: "পিস",
         currentPrice: 35,
-        image: "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=300",
+        image: prod3,
         priceHistory: [
             { date: "2024-01-01", price: 30 },
             { date: "2024-01-02", price: 32 },
@@ -55,7 +64,7 @@ export const products = [
         category: "meat_poultry",
         unit: "কেজি",
         currentPrice: 550,
-        image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=300",
+        image: prod4,
         priceHistory: [
             { date: "2024-01-01", price: 520 },
             { date: "2024-01-02", price: 530 },
@@ -71,7 +80,7 @@ export const products = [
         category: "meat_poultry",
         unit: "কেজি",
         currentPrice: 320,
-        image: "https://images.unsplash.com/photo-1534043464124-3be572bd7746?w=300",
+        image: prod5,
         priceHistory: [
             { date: "2024-01-01", price: 300 },
             { date: "2024-01-02", price: 310 },
@@ -87,7 +96,7 @@ export const products = [
         category: "traditional_food",
         unit: "লিটার",
         currentPrice: 75,
-        image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=300",
+        image: prod6,
         priceHistory: [
             { date: "2024-01-01", price: 70 },
             { date: "2024-01-02", price: 72 },
@@ -103,7 +112,7 @@ export const products = [
         category: "traditional_food",
         unit: "কেজি",
         currentPrice: 65,
-        image: "https://images.unsplash.com/photo-1536304993881-ff6e9aefacd9?w=300",
+        image: prod7,
         priceHistory: [
             { date: "2024-01-01", price: 60 },
             { date: "2024-01-02", price: 62 },
@@ -119,7 +128,7 @@ export const products = [
         category: "traditional_food",
         unit: "কেজি",
         currentPrice: 180,
-        image: "https://images.unsplash.com/photo-1618375569909-3c8616cf09ae?w=300",
+        image: prod8,
         priceHistory: [
             { date: "2024-01-01", price: 170 },
             { date: "2024-01-02", price: 175 },

@@ -30,12 +30,12 @@ const Home = () => {
   }
 
   return (
-    <div className="w-full min-h-screen bg-gray-50">
+    <div className="w-full min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-5xl font-bold mb-2">BazaarPrice BD</h1>
+            <h1 className="text-5xl font-bold mb-2">Ajker Dam</h1>
             <p className="text-xl text-emerald-100">আপনার বাজারের সাথী - দৈনিক বাজার দাম</p>
           </div>
 

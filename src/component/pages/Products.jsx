@@ -25,7 +25,7 @@ const Products = () => {
   });
 
   return (
-    <div className="w-full min-h-screen bg-gray-50">
+    <div className="w-full min-h-screen bg-white">
       {/* Header Section */}
       <section className="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 text-white py-12">
         <div className="container mx-auto px-4 text-center">
