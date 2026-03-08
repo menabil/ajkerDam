@@ -1,33 +1,37 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router'
-import { products, categories } from '../../data/products'
+import React, { useState } from "react";
+import { Link } from "react-router";
+import { products, categories } from "../../data/products";
 
 const Home = () => {
-  const [selectedCategory, setSelectedCategory] = useState('all')
-  const [searchTerm, setSearchTerm] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
 
   // Calculate statistics
-  const newPricesCount = Math.floor(products.length * 0.5)
-  const priceIncreasesCount = Math.floor(products.length * 0.35)
-  const priceDecreasesCount = Math.floor(products.length * 0.15)
+  const newPricesCount = Math.floor(products.length * 0.5);
+  const priceIncreasesCount = Math.floor(products.length * 0.35);
+  const priceDecreasesCount = Math.floor(products.length * 0.15);
 
   // Filter products
-  const filteredProducts = products.filter(product => {
-    const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory
-    const matchesSearch = product.nameBn.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                         product.nameEn.toLowerCase().includes(searchTerm.toLowerCase())
-    return matchesCategory && matchesSearch
-  }).slice(0, 4)
+  const filteredProducts = products
+    .filter((product) => {
+      const matchesCategory =
+        selectedCategory === "all" || product.category === selectedCategory;
+      const matchesSearch =
+        product.nameBn.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.nameEn.toLowerCase().includes(searchTerm.toLowerCase());
+      return matchesCategory && matchesSearch;
+    })
+    .slice(0, 4);
 
   // Get price change
   const getPriceChange = (priceHistory) => {
     if (priceHistory.length >= 2) {
-      const latest = priceHistory[priceHistory.length - 1].price
-      const previous = priceHistory[priceHistory.length - 2].price
-      return latest - previous
+      const latest = priceHistory[priceHistory.length - 1].price;
+      const previous = priceHistory[priceHistory.length - 2].price;
+      return latest - previous;
     }
-    return null
-  }
+    return null;
+  };
 
   return (
     <div className="w-full min-h-screen bg-white">
@@ -36,18 +40,28 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-2">Ajker Dam</h1>
-            <p className="text-xl text-emerald-100">আপনার বাজারের সাথী - দৈনিক বাজার দাম</p>
+            <p className="text-xl text-emerald-100">
+              আপনার বাজারের সাথী - দৈনিক বাজার দাম
+            </p>
           </div>
 
           {/* Live Ticker */}
           <div className="mt-6 bg-red-600 text-white py-3 px-4 rounded-lg overflow-hidden">
             <div className="flex items-center gap-4">
-              <span className="bg-red-700 px-3 py-1 rounded font-bold text-sm whitespace-nowrap">লাইভ</span>
+              <span className="bg-red-700 px-3 py-1 rounded font-bold text-sm whitespace-nowrap">
+                লাইভ
+              </span>
               <div className="flex-1 overflow-hidden">
                 <div className="animate-scroll flex gap-8">
-                  <span className="whitespace-nowrap">⚡ সর্বশেষ আপডেট পেতে আমাদের সাথে থাকুন</span>
-                  <span className="whitespace-nowrap">⚡ প্রতিদিন নতুন দাম আপডেট</span>
-                  <span className="whitespace-nowrap">⚡ বাজারের সবচেয়ে নির্ভরযোগ্য তথ্য</span>
+                  <span className="whitespace-nowrap">
+                    ⚡ সর্বশেষ আপডেট পেতে আমাদের সাথে থাকুন
+                  </span>
+                  <span className="whitespace-nowrap">
+                    ⚡ প্রতিদিন নতুন দাম আপডেট
+                  </span>
+                  <span className="whitespace-nowrap">
+                    ⚡ বাজারের সবচেয়ে নির্ভরযোগ্য তথ্য
+                  </span>
                 </div>
               </div>
             </div>
@@ -60,15 +74,21 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg shadow-md border-l-4 border-blue-500">
-              <div className="text-4xl font-bold text-blue-600 mb-2">{newPricesCount}</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">
+                {newPricesCount}
+              </div>
               <p className="text-gray-700 font-medium">নতুন দাম আজ</p>
             </div>
             <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg shadow-md border-l-4 border-red-500">
-              <div className="text-4xl font-bold text-red-600 mb-2">{priceIncreasesCount}</div>
+              <div className="text-4xl font-bold text-red-600 mb-2">
+                {priceIncreasesCount}
+              </div>
               <p className="text-gray-700 font-medium">মূল্য বৃদ্ধি</p>
             </div>
             <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg shadow-md border-l-4 border-green-500">
-              <div className="text-4xl font-bold text-green-600 mb-2">{priceDecreasesCount}</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">
+                {priceDecreasesCount}
+              </div>
               <p className="text-gray-700 font-medium">মূল্য হ্রাস</p>
             </div>
           </div>
@@ -91,8 +111,6 @@ const Home = () => {
               <option>সকল ক্যাটেগরি</option>
             </select>
           </div>
-
-
         </div>
       </section>
 
@@ -103,14 +121,19 @@ const Home = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {Object.entries(categories).map(([key, value], idx) => {
               // use placeholder image, or pick from assets if available
-              const imgSrc = `/src/assets/products/product${(idx % 8) + 1}.svg`;
+              // const imgSrc = `/src/assets/products/product${(idx % 8) + 1}.svg`;
+              const imgSrc = `/products/product${(idx % 8) + 1}.svg`;
               return (
                 <div
                   key={key}
                   onClick={() => setSelectedCategory(key)}
                   className="cursor-pointer flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow hover:shadow-md transition"
                 >
-                  <img src={imgSrc} alt={value} className="w-20 h-20 object-contain mb-2" />
+                  <img
+                    src={imgSrc}
+                    alt={value}
+                    className="w-20 h-20 object-contain mb-2"
+                  />
                   <span className="text-sm text-center">{value}</span>
                 </div>
               );
@@ -122,11 +145,13 @@ const Home = () => {
       {/* Featured Products Section */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">আজকের বিশেষ পণ্য</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
+            আজকের বিশেষ পণ্য
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            {filteredProducts.map(product => {
-              const priceChange = getPriceChange(product.priceHistory)
+            {filteredProducts.map((product) => {
+              const priceChange = getPriceChange(product.priceHistory);
               return (
                 <div
                   key={product.id}
@@ -143,23 +168,34 @@ const Home = () => {
                       {categories[product.category]}
                     </div>
                     {priceChange && (
-                      <div className={`absolute bottom-2 right-2 px-2 py-1 rounded text-xs font-bold text-white ${
-                        priceChange > 0 ? 'bg-red-500' : 'bg-green-500'
-                      }`}>
-                        {priceChange > 0 ? '↑' : '↓'} {Math.abs(priceChange)} টাকা
+                      <div
+                        className={`absolute bottom-2 right-2 px-2 py-1 rounded text-xs font-bold text-white ${
+                          priceChange > 0 ? "bg-red-500" : "bg-green-500"
+                        }`}
+                      >
+                        {priceChange > 0 ? "↑" : "↓"} {Math.abs(priceChange)}{" "}
+                        টাকা
                       </div>
                     )}
                   </div>
 
                   {/* Product Info */}
                   <div className="p-4">
-                    <h3 className="font-bold text-lg mb-1 text-gray-800">{product.nameBn}</h3>
-                    <p className="text-sm text-gray-600 mb-3">{product.nameEn}</p>
+                    <h3 className="font-bold text-lg mb-1 text-gray-800">
+                      {product.nameBn}
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-3">
+                      {product.nameEn}
+                    </p>
 
                     {/* Price */}
                     <div className="mb-3">
-                      <div className="text-3xl font-bold text-emerald-600">৳{product.currentPrice}</div>
-                      <div className="text-sm text-gray-600">/{product.unit}</div>
+                      <div className="text-3xl font-bold text-emerald-600">
+                        ৳{product.currentPrice}
+                      </div>
+                      <div className="text-sm text-gray-600">
+                        /{product.unit}
+                      </div>
                     </div>
 
                     {/* Action Button */}
@@ -171,7 +207,7 @@ const Home = () => {
                     </Link>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
 
@@ -187,7 +223,7 @@ const Home = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

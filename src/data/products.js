@@ -1,12 +1,12 @@
 // Product data for Ajker Dam
-import prod1 from '../assets/products/product1.svg';
-import prod2 from '../assets/products/product2.svg';
-import prod3 from '../assets/products/product3.svg';
-import prod4 from '../assets/products/product4.svg';
-import prod5 from '../assets/products/product5.svg';
-import prod6 from '../assets/products/product6.svg';
-import prod7 from '../assets/products/product7.svg';
-import prod8 from '../assets/products/product8.svg';
+import prod1 from '/products/product1.svg';
+import prod2 from '/products/product2.svg';
+import prod3 from '/products/product3.svg';
+import prod4 from '/products/product4.svg';
+import prod5 from '/products/product5.svg';
+import prod6 from '/products/product6.svg';
+import prod7 from '/products/product7.svg';
+import prod8 from '/products/product8.svg';
 
 export const products = [
     {
